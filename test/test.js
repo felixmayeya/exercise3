@@ -35,8 +35,9 @@ describe('jQuery', function () {
     $.ajax({
       url: 'https://raw.githubusercontent.com/FE-star/exercise1/master/test/test.js',
       async: true,
+      crossDomain: true,
       success: function(data, status){
-        console.log(status)
+        console.log(data)
         done()
       }
     })
